@@ -13,7 +13,8 @@ export const handle: Handle = async ({ event, resolve }) => {
   }
 
   event.locals.pb = pb
-  event.locals.user = structuredClone(pb.authStore.model)
+  //todo
+  // event.locals.user = structuredClone(pb.authStore.model)
 
   const response = await resolve(event)
 
